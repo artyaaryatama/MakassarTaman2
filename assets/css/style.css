@@ -1524,3 +1524,45 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/*--------------------------------------------------------------
+# Embed Whatsapp
+--------------------------------------------------------------*/
+#embed-whatsapp .floating-btn {
+  width: 290px;
+  height: 38px;
+  background-color: #007d00;
+  position: fixed;
+  left: 35px;
+  bottom: 30px;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  border-radius: 20px;
+  float: left;
+}
+#embed-whatsapp .fa-whatsapp {
+  font-size: 25px;
+  padding-left: 16px;
+  padding-top: 5px;
+}
+#embed-whatsapp .embed-text {
+  margin-top: -25px;
+  margin-left: 46px;
+}
+
+/*--------------------------------------------------------------
+STYLE PAGE ARTIKEL
+--------------------------------------------------------------*/
+#artikel .section-title {
+  padding-top: 107px;
+}
+#artikel hr{
+  border-color: rgb(95, 95, 95);
+  border-width: 1px;
+  margin-top: -13px;
+}
+#artikel .item-link p{
+  font-size: 15px;
+  text-decoration: underline;
+}
