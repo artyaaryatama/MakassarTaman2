@@ -291,8 +291,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  top: 18px;
-  right: 15px;
+  top: 6%;
+  right: 10px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -918,7 +918,9 @@ section {
 --------------------------------------------------------------*/
 .cta {
   background: #5cb874;
-  padding: 80px 0;
+  padding: 75px 0;
+  margin-bottom: -70px;
+  margin-top: 20px;
 }
 
 .cta h3 {
@@ -1525,6 +1527,11 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+@media (max-width: 575px) {
+  #footer .contact-section {
+    padding-top: 35px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Embed Whatsapp
@@ -1589,7 +1596,7 @@ STYLE PAGE ARTIKEL-LIST.hmtl
 STYLE PAGE ARTIKEL
 --------------------------------------------------------------*/
 #testimoni .section-title {
-  padding-top: 107px;
+  padding-top: 150px;
 }
 
 #testimoni .testimoni-content {
@@ -1610,4 +1617,9 @@ STYLE PAGE ARTIKEL
   #testimoni .testimoni-content {
     margin-top: 20px;
   }
+  #testimoni .section-title {
+    padding-top: 100px;
+  }
 }
+
+
