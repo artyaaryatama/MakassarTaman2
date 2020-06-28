@@ -1585,5 +1585,29 @@ STYLE PAGE ARTIKEL-LIST.hmtl
   font-size: larger;
 }
 
+/*--------------------------------------------------------------
+STYLE PAGE ARTIKEL
+--------------------------------------------------------------*/
+#testimoni .section-title {
+  padding-top: 107px;
+}
 
+#testimoni .testimoni-content {
+  font-size: 15px;
+}
+#testimoni .testimoni-content h5{
+  margin-top: -10px;
+}
+#testimoni .testimoni-content .fa-thumbs-down {
+  font-size: 15px;
 
+}
+#testimoni .testimoni-content .fa-thumbs-up {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  #testimoni .testimoni-content {
+    margin-top: 20px;
+  }
+}
