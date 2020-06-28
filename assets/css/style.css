@@ -1631,5 +1631,10 @@ STYLE PAGE ARTIKEL
     padding-top: 100px;
   }
 }
-
+@media (max-width: 415px) {
+  #testimoni .media-body button {
+    margin-top: 12px;
+    
+  }
+}
 
