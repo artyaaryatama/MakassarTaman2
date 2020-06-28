@@ -1533,18 +1533,20 @@ section {
   height: 38px;
   background-color: #007d00;
   position: fixed;
-  left: 35px;
-  bottom: 30px;
+  left: 15px;
+  bottom: 15px;
   font-size: 15px;
   font-weight: 300;
   color: white;
   border-radius: 20px;
   float: left;
+  z-index: 10;
 }
 #embed-whatsapp .fa-whatsapp {
   font-size: 25px;
   padding-left: 16px;
   padding-top: 5px;
+  z-index: 10;
 }
 #embed-whatsapp .embed-text {
   margin-top: -25px;
