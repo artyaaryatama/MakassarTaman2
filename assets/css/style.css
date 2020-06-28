@@ -1569,3 +1569,21 @@ STYLE PAGE ARTIKEL
   font-size: 15px;
   text-decoration: underline;
 }
+/*--------------------------------------------------------------
+STYLE PAGE ARTIKEL-LIST.hmtl
+--------------------------------------------------------------*/
+#artikel .nav-artikel {
+  background-color: #5cb874;
+}
+#artikel .nav-artikel .nav h3 {
+  letter-spacing: 15px;
+}
+
+#artikel .pagination-artikel .page-link {
+  color: #5cb874;
+  font-weight: 600;
+  font-size: larger;
+}
+
+
+
