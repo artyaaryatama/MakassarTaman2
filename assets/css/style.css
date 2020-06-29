@@ -1572,6 +1572,32 @@ section {
 }
 
 /*--------------------------------------------------------------
+STYLE modal produk
+--------------------------------------------------------------*/
+#modal-wrapper th {
+  width: 10rem;
+}
+#modal-wrapper table {
+  font-size: 15px;
+}
+@media (max-width: 576px) {
+  #modal-wrapper img{
+    margin-bottom: 20px;
+  }
+}
+/* #modal-wrapper .modal-index {
+  z-index: 10000;
+} */
+
+@media (max-width: 363px) {
+  #modal-wrapper table {
+    font-size: 12px;
+  }
+  #modal-wrapper th {
+    width: 10%;
+  }
+}
+/*--------------------------------------------------------------
 STYLE PAGE ARTIKEL
 --------------------------------------------------------------*/
 #artikel .section-title {
