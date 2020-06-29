@@ -1663,4 +1663,15 @@ STYLE PAGE ARTIKEL
     
   }
 }
+/*--------------------------------------------------------------
+STYLE PAGE PRODUK
+--------------------------------------------------------------*/
+#produk-html .section-title {
+  padding-top: 150px;
+}
 
+@media (max-width: 768px) {
+  #produk-html .section-title {
+    padding-top: 100px;
+  }
+}
