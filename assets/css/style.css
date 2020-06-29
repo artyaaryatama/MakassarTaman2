@@ -1144,6 +1144,17 @@ section {
   margin: 0 2px;
 }
 
+.team .container {
+  margin-top: 150px;
+}
+
+@media (max-width: 991px) {
+  .team .container {
+    margin-top: 100px;
+  }
+  
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1598,38 +1609,38 @@ STYLE modal produk
   }
 }
 /*--------------------------------------------------------------
-STYLE PAGE ARTIKEL
+STYLE PAGE about
 --------------------------------------------------------------*/
-#artikel .section-title {
+#about .section-title {
   padding-top: 107px;
 }
-#artikel hr{
+#about hr{
   border-color: rgb(95, 95, 95);
   border-width: 1px;
   margin-top: -13px;
 }
-#artikel .item-link p{
+#about .item-link p{
   font-size: 15px;
   text-decoration: underline;
 }
 /*--------------------------------------------------------------
 STYLE PAGE ARTIKEL-LIST.hmtl
 --------------------------------------------------------------*/
-#artikel .nav-artikel {
+#about .nav-artikel {
   background-color: #5cb874;
 }
-#artikel .nav-artikel .nav h3 {
+#about .nav-artikel .nav h3 {
   letter-spacing: 15px;
 }
 
-#artikel .pagination-artikel .page-link {
+#about .pagination-artikel .page-link {
   color: #5cb874;
   font-weight: 600;
   font-size: larger;
 }
 
 /*--------------------------------------------------------------
-STYLE PAGE ARTIKEL
+STYLE PAGE about
 --------------------------------------------------------------*/
 #testimoni .section-title {
   padding-top: 150px;
@@ -1666,12 +1677,12 @@ STYLE PAGE ARTIKEL
 /*--------------------------------------------------------------
 STYLE PAGE PRODUK
 --------------------------------------------------------------*/
-#produk-html .section-title {
+#produk .section-title {
   padding-top: 150px;
 }
 
 @media (max-width: 768px) {
-  #produk-html .section-title {
+  #produk .section-title {
     padding-top: 100px;
   }
 }
