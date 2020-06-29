@@ -1585,9 +1585,9 @@ STYLE modal produk
     margin-bottom: 20px;
   }
 }
-/* #modal-wrapper .modal-index {
-  z-index: 10000;
-} */
+#modal-wrapper .modal-index {
+  z-index: 988;
+}
 
 @media (max-width: 363px) {
   #modal-wrapper table {
