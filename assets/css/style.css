@@ -1603,6 +1603,9 @@ section {
 /*--------------------------------------------------------------
 # Embed Whatsapp
 --------------------------------------------------------------*/
+#embed-whatsapp {
+  z-index:  30;
+}
 #embed-whatsapp .floating-btn {
   width: 290px;
   height: 38px;
@@ -1615,13 +1618,11 @@ section {
   color: white;
   border-radius: 20px;
   float: left;
-  z-index: 16;
 }
 #embed-whatsapp .fa-whatsapp {
   font-size: 25px;
   padding-left: 16px;
   padding-top: 5px;
-  z-index: 16;
 }
 #embed-whatsapp .embed-text {
   margin-top: -25px;
