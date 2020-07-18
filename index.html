@@ -16,6 +16,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Roboto&family=Rozha+One&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +25,10 @@
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <!--Data AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -48,14 +53,14 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <a href="index.html" class="logo mr-1"><img  src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      <h1 class="logo mr-auto"><a href="index.html">MAKASSAR TAMAN</a></h1>
+      <h1 class="logo mr-auto"><a href="index.html" style="font-family: 'Rozha One', serif;">MAKASSAR TAMAN</a></h1>
     
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#about">Artikel</a></li>
           <li><a href="#produk">Produk</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="testimoni.html">Testimoni</a></li>
           <li class="drop-down"><a href="">Kontak</a>
             <ul>
               <li><a href="https://api.whatsapp.com/send?phone=6282196266692&text=Permisi,%20saya%20mau%20pesan&source=&data=&app_absent="> <i class="fab fa-whatsapp mr-2"></i> Whatsapp</a></li>
@@ -178,7 +183,7 @@
         <div class="section-title ">
           <h2>Artikel</h2>
           <ul class="list-unstyled text-left">
-            <div class="card mb-2">
+            <div class="card mb-2" data-aos="fade-up" data-aos-delay="200">
               <div class="card-body">
                 <li class="media">
                   <div class="row">
@@ -201,7 +206,7 @@
              
             </div>
             
-            <div class="card mb-2">
+            <div class="card mb-2" data-aos="fade-up" data-aos-delay="300">
               <div class="card-body">
                 <li class="media">
                   <div class="row">
@@ -224,7 +229,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
               <div class="card-body">
                 <li class="media">
                   <div class="row">
@@ -335,12 +340,14 @@
 
         <div class="section-title">
           <h2>Produk</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Kami menyediakan rumput berkualitas yang siap pasang dan tanaman hias </p>
         </div>
 
+        
         <div class="row produk">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;">
+          
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;"  >
               <img src="assets/img/produk/gambar1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Rumput gajah mini</h5>
@@ -413,14 +420,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;">
-              <img src="assets/img/produk/gambar2.jpg" class="card-img-top" alt="...">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" >
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;"  >
+              <img src="assets/img/produk/produk-rumput-jepang.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Rumput jepang</h5>
                 <p class="card-text">Rumput Jepang tidak perlu terlalu sering dipangkas karena pertumbuhannya agak lambat. Namun Anda perlu rutin menyiram dan memberi pupuk agar rumput ini tidak menguning.</p>
                 <div class="row">
-                  <a style="color: white;" class="btn btn-warning col">Rp22.000/meter</a>
+                  <a style="color: white;" class="btn btn-warning col">Rp25.000/meter</a>
                   <a href="https://api.whatsapp.com/send?phone=6282196266692&text=Permisi,%20saya%20mau%20pesan&source=&data=&app_absent=" class="btn btn-success col ml-1">Beli</a>
                  </div>
 
@@ -441,7 +448,7 @@
                         <div class="modal-body">
                           <div class="row">
                             <div class="col-md-5">
-                              <img src="assets/img/produk/gambar2.jpg" class="img-fluid mt-md-4 mb-sm-3" alt="responsive-image" ;" alt="Rumput Jepang">
+                              <img src="assets/img/produk/produk-rumput-jepang.jpg" class="img-fluid mt-md-4 mb-sm-3" alt="responsive-image" ;" alt="Rumput Jepang">
                             </div>
                             <div class="col-md-7">
                               <table class=" table table-borderless">
@@ -463,7 +470,7 @@
                                 </tr>
                                 <tr>
                                     <th>Harga</th>
-                                    <td>Rp.20.000/meter</td>
+                                    <td>Rp.25.000/meter</td>
                                 </tr>
                                 <tr>
                                   <th>Biaya tambahan pemasangan</th>
@@ -486,14 +493,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;">
-              <img src="assets/img/produk/gambar3.jpg" class="card-img-top" alt="...">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"  >
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;" >
+              <img src="assets/img/produk/produk-rumput-swiss.jpg" class="card-img-top" alt="..." >
               <div class="card-body">
-                <h5 class="card-title">Rumput Gajah Besar</h5>
-                <p class="card-text">Ukurannya yang besar dan tekstur yang kasar membuat rumput ini kuat dan tahan lama. Perawatannya cukup mudah, yaitu hanya perlu disiram sesekali dan harganya pun terjangkau.</p>
+                <h5 class="card-title">Rumput Swiss</h5>
+                <p class="card-text">Rumput Swiss adalah jenis rumput yang memiliki tekstur paling halus di antara jenis rumput lainnya. Rumput ini terlihat rapi, sehingga cocok sebagai penghias taman idaman Anda. </p>
                <div class="row">
-                <a style="color: white;" class="btn btn-warning col">Rp20.000/meter</a>
+                <a style="color: white;" class="btn btn-warning col">Rp24.000/meter</a>
                 <a href="https://api.whatsapp.com/send?phone=6282196266692&text=Permisi,%20saya%20mau%20pesan&source=&data=&app_absent=" class="btn btn-success col ml-1">Beli</a>
                </div>
 
@@ -514,7 +521,7 @@
                         <div class="modal-body">
                           <div class="row">
                             <div class="col-md-5">
-                              <img src="assets/img/produk/gambar3.jpg" class="img-fluid mt-md-4 mb-sm-3" alt="responsive-image" ;" alt="Rumput gajah mini">
+                              <img src="assets/img/produk/produk-rumput-swiss.jpg" class="img-fluid mt-md-4 mb-sm-3" alt="responsive-image"  alt="Rumput gajah mini">
                             </div>
                             <div class="col-md-7">
                               <table class=" table table-borderless">
@@ -528,7 +535,7 @@
                                 </tr> -->
                                 <tr>
                                     <th>Biaya Ongkir</th>
-                                    <td>Standar</td>
+                                    <td>Standar/Kota Makassar</td>
                                 </tr>
                                 <tr>
                                     <th>Stok produk</th>
@@ -536,7 +543,7 @@
                                 </tr>
                                 <tr>
                                     <th>Harga</th>
-                                    <td>Rp.20.000/meter</td>
+                                    <td>Rp.24.000/meter</td>
                                 </tr>
                                 <tr>
                                   <th>Biaya tambahan pemasangan</th>
@@ -557,9 +564,9 @@
 
               </div>
             </div>
-          </div>
+         </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" >
             <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;">
               <img src="assets/img/produk/gambar1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -632,7 +639,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;">
               <img src="assets/img/produk/gambar1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -705,7 +712,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;">
               <img src="assets/img/produk/gambar1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -797,7 +804,7 @@
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= testimoni Section ======= -->
     <section id="testimoni" class="portfolio">
       <div class="container">
 
@@ -950,7 +957,7 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section><!-- testimoni Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -958,7 +965,7 @@
 
         <div class="section-title">
           <h2>Kontak</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Anda dapat menghubungi kami melalui email atau Whatsaap dengan menekan tombol berlogo whatsapp</p>
         </div>
 
         <div class="row">
@@ -1034,20 +1041,24 @@
       <div class="row">
         <div class="col-sm-4">
           <h4 class="text-left">MAKASSAR TAMAN</h4>
-           <p class="text-left">Makassar taman adalahh Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-             Recusandae eius commodi soluta, amet voluptatibus temporibus facilis saepe suscipit 
-             praesentium magnam, quod doloremque deserunt et? At similique non harum minus molestiae?</p>
+           <p class="text-left">Makassar taman adalah situs yang menyediakan rumput  hias dan jasa pemasangan rumput, kami juga 
+             menyediakan tanaman hias dengan berbagai jenis yang siap diantarkan langsung ke rumah anda. Hubungi kontak kami segera!
+           </p>
         </div>
-        <div class="col-sm-4 pl-md-5">
-          <h4 class="text-left ">Quick Links</h4>
-          <div class="col text-left">
-            <i class="fas fa-caret-right pr-2"></i> <a href="tim.html">Team</a> <br>
-            <i class="fas fa-caret-right pr-2"></i> <a href="tim.html">Team</a> <br>
-            <i class="fas fa-caret-right pr-2"></i> <a href="tim.html">Team</a> <br>
+      <div class="col-sm-4"></div>
+     <!-- QUICK LINK
+              <div class="col-sm-4 pl-md-5">
+            <h4 class="text-left ">Quick Links</h4>
+            <div class="col text-left">
+              <i class="fas fa-caret-right"></i> <a href="">Website contoh 1</a> <br>
+              <i class="fas fa-caret-right"></i><a href="">Website contoh 2</a> <br>
+              <i class="fas fa-caret-right"></i>  <a href="">Website contoh 3</a>
+            </div>
           </div>
-        </div>
+     -->
+   
         <div class="col-sm-4 text-left contact-section">
-          <h4 class=""text-left">Contact  info</h4>
+          <h4 class="text-left">Contact  info</h4>
           <div class="col">
            <div class="row"><p><span class="fas fa-map-marker-alt"></span> Kecamatan Barombong, kelurahan Benteng somba Opu, RW.4 Leko'boddong</span></p></div>
           </div>
@@ -1076,7 +1087,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+ 
+<script>
+  AOS.init({
+    duration: 1200,
+  });
+</script>
 </body>
 
 </html>

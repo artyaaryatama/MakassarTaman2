@@ -1,4 +1,6 @@
-
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -13,22 +15,24 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
-
-.card-body img{
+.card-body img {
   width: fit-content;
   border-radius: 10px;
 }
 
-
-.produk img{
+.produk img {
   width: 100%;
   border-radius: 20px;
 }
-
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -181,7 +185,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
   color: #5cb874;
 }
 
@@ -218,7 +224,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
   color: #5cb874;
 }
 
@@ -339,7 +347,9 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
   color: #5cb874;
   text-decoration: none;
 }
@@ -372,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-overly {
   width: 100%;
   height: 100%;
-  z-index:99;
+  z-index: 99;
   top: 0;
   left: 0;
   position: fixed;
@@ -407,7 +417,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-#hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
+#hero .carousel,
+#hero .carousel-inner,
+#hero .carousel-item,
+#hero .carousel-item::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -419,7 +432,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-item::before {
-  content: '';
+  content: "";
   background-color: rgba(45, 103, 60, 0.8);
 }
 
@@ -478,18 +491,21 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate3d(0, 0, 0);
 }
 
-#hero .carousel-control-prev, #hero .carousel-control-next {
+#hero .carousel-control-prev,
+#hero .carousel-control-next {
   width: 10%;
   top: 112px;
 }
 
 @media (max-width: 992px) {
-  #hero .carousel-control-prev, #hero .carousel-control-next {
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
     top: 66px;
   }
 }
 
-#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
   background: none;
   font-size: 36px;
   line-height: 1;
@@ -502,7 +518,8 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-#hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+#hero .carousel-control-next-icon:hover,
+#hero .carousel-control-prev-icon:hover {
   background: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.8);
 }
@@ -515,7 +532,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 12px;
   height: 12px;
   border-radius: 50px;
-  opacity: .6;
+  opacity: 0.6;
   transition: 0.3s;
 }
 
@@ -560,7 +577,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  #hero .carousel-control-prev, #hero .carousel-control-next {
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
     width: 5%;
   }
 }
@@ -597,7 +615,7 @@ section {
 }
 
 .section-title h2::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 120px;
@@ -608,7 +626,7 @@ section {
 }
 
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 40px;
@@ -636,7 +654,12 @@ section {
 }
 
 .featured-services .icon-box-bg {
-  background-image: linear-gradient(0deg, #222222 0%, #2f2f2f 50%, #222222 100%);
+  background-image: linear-gradient(
+    0deg,
+    #222222 0%,
+    #2f2f2f 50%,
+    #222222 100%
+  );
 }
 
 .featured-services .icon {
@@ -763,7 +786,8 @@ section {
   opacity: 1;
 }
 
-.clients .owl-nav, .clients .owl-dots {
+.clients .owl-nav,
+.clients .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -921,7 +945,7 @@ section {
   background: #5cb874;
   margin-top: 100px;
   color: #fff;
-  transition: 0.6s ease-in ;
+  transition: 0.6s ease-in;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   height: 16rem;
@@ -933,21 +957,21 @@ section {
   margin-top: 100px;
   border-top: 2px solid #5cb874;
   border-bottom: 2px solid #5cb874;
-  color:#5cb874;
+  color: #5cb874;
   height: 16rem;
 }
 
-.cta .h1-a{
+.cta .h1-a {
   font-weight: 700;
   font-size: 45px;
   padding-top: 45px;
   position: inherit;
 }
-.cta:hover .h1-a{
+.cta:hover .h1-a {
   font-size: 0;
   position: absolute;
 }
-.cta .h1-b{
+.cta .h1-b {
   font-size: 0;
   position: absolute;
 }
@@ -958,15 +982,13 @@ section {
   position: inherit;
 }
 
-
 @media (max-width: 385px) {
-  .cta .h1-a{
+  .cta .h1-a {
     font-weight: 700;
     font-size: 35px;
     padding-top: 45px;
     position: inherit;
   }
-
 }
 @media (max-width: 516px) {
   .cta:hover .h1-b {
@@ -977,7 +999,7 @@ section {
   }
 }
 .cta p {
-  padding: 10px 0 ;
+  padding: 10px 0;
 }
 
 /* .cta .cta-btn {
@@ -1013,7 +1035,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1042,7 +1063,8 @@ section {
   border-radius: 3px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #fff;
   background: #5cb874;
 }
@@ -1198,7 +1220,6 @@ section {
   .team .container {
     margin-top: 100px;
   }
-  
 }
 
 /*--------------------------------------------------------------
@@ -1266,7 +1287,9 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #5cb874;
   color: #fff;
 }
@@ -1334,14 +1357,16 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #5cb874;
 }
 
@@ -1453,7 +1478,8 @@ section {
   z-index: 1;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.portfolio-details .portfolio-details-carousel .owl-nav,
+.portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: left;
 }
@@ -1587,7 +1613,7 @@ section {
 
 #footer .copyright hr {
   border-width: 1px;
-  background-color: #f8fcf9 ;
+  background-color: #f8fcf9;
   margin-bottom: 40px;
 }
 
@@ -1638,7 +1664,7 @@ STYLE modal produk
   font-size: 15px;
 }
 @media (max-width: 576px) {
-  #modal-wrapper img{
+  #modal-wrapper img {
     margin-bottom: 20px;
   }
 }
@@ -1660,12 +1686,12 @@ STYLE PAGE about
 #about .section-title {
   padding-top: 107px;
 }
-#about hr{
+#about hr {
   border-color: rgb(95, 95, 95);
   border-width: 1px;
   margin-top: -13px;
 }
-#about .item-link p{
+#about .item-link p {
   font-size: 15px;
   text-decoration: underline;
 }
@@ -1695,12 +1721,11 @@ STYLE PAGE about
 #testimoni .testimoni-content {
   font-size: 15px;
 }
-#testimoni .testimoni-content h5{
+#testimoni .testimoni-content h5 {
   margin-top: -10px;
 }
 #testimoni .testimoni-content .fa-thumbs-down {
   font-size: 15px;
-
 }
 #testimoni .testimoni-content .fa-thumbs-up {
   font-size: 15px;
@@ -1717,7 +1742,6 @@ STYLE PAGE about
 @media (max-width: 415px) {
   #testimoni .media-body button {
     margin-top: 12px;
-    
   }
 }
 /*--------------------------------------------------------------
