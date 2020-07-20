@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Makassar Taman- Dashboard</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Makassar Taman</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Cari..." aria-label="Search"
+                    aria-describedby="basic-addon2" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Activity Log</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Home</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            Dashboard
+                        </a>
+                        <div class="sb-sidenav-menu-heading ">Produk</div>
+
+                        <a class="nav-link inline " href="dashboard-products.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fab fa-product-hunt"></i>
+                            </div>
+                            Kelolah produk
+                        </a>
+
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+
+                            </nav>
+
+                        </div>
+
+                        <div class="sb-sidenav-menu-heading">Artikel</div>
+                        <a class="nav-link " href="dashboard-artikel.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="far fa-newspaper"></i>
+                            </div>
+                            Kelolah Artikel
+                        </a>
+
+
+                        <div class="sb-sidenav-menu-heading">Testimoni</div>
+                        <a class="nav-link active" href="charts.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            Kelolah Testimoni
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Login sebagai:</div>
+                    Andi Gigatera
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid ">
+                    <h1 class="mt-4">Testimoni</h1>
+                    <ol class="breadcrumb mb-4 bg-dark ">
+                        <li class="breadcrumb-item "><a href="index.html" class="text-white">Dashboard</a></li>
+                        <li class="breadcrumb-item active text-white">Testimoni</li>
+                    </ol>
+
+
+                    <div class="container">
+                        <div class="dashboard-heading">
+                            <h2 class="dashboard-title">
+                                Testimoni Terbaru
+                            </h2>
+                            <p class="dashboard-subtitle">
+                                Kelolah Testimoni pelanggan anda disini
+                            </p>
+                        </div>
+                        <a class="btn btn-secondary btn-lg text-white mb-3">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" size="10" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                </label>
+                            </div>
+                        </a>
+                        <a class="btn btn-secondary btn-lg text-white mb-3">Tambahkan Testimoni</a>
+                        <a class="btn btn-secondary btn-lg text-white mb-3">Hapus</a>
+                        <a class="btn btn-secondary btn-lg text-white mb-3">Spam </a>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table mr-1"></i>
+                                Daftar Testimoni
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Testimoni terbaru</th>
+                                                <th colspan="2">Akun</th>
+                                                <th>Tanggal</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <a href="">Sangat memuaskan belanja disini, penjualnya
+                                                                sangat sabar dan fast respon. Mantap!</a>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"><a href="">Amanda</a></td>
+
+
+                                                <td>2011/04/25</>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <a href="">Tukang yang memasang rumput sangat ramah, dan
+                                                                sangat teliti. Terimakasih Makassar Taman.</a>
+                                                        </label>
+                                                    </div>
+
+                                                </td>
+                                                <td colspan="2"><a href="">Dimas</a></td>
+
+
+                                                <td>2011/07/25</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <a href=""></a>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"><a href="">Wawan</a></td>
+
+
+                                                <td>2009/01/12</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <a href="">Penjual sangat baik dan fast respon, maafkan saya
+                                                                terlalu banyak bertanya mas. Mantap lah Makassar Taman.
+                                                            </a>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"><a href="">Agus</a></td>
+
+
+                                                <td>2012/03/29</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <a href="">Tentang Bunga Alamanda dan Manfaatnya Sebagai
+                                                                Obat
+                                                                Tradisiona</a>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"><a href="">Rahma</a></td>
+
+
+                                                <td>2012/03/29</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <a href="">Pelayanannya professional. Sangat memuaskan
+                                                                belanja disini.
+                                                            </a>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"><a href="">Rahma</a></td>
+
+
+                                                <td>2012/03/29</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <a href="">Tentang Bunga Alamanda dan Manfaatnya Sebagai
+                                                                Obat
+                                                                Tradisiona</a>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"><a href="">Dimas</a></td>
+
+
+                                                <td>2012/03/29</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            <a href="">Tentang Bunga Alamanda dan Manfaatnya Sebagai
+                                                                Obat
+                                                                Tradisiona</a>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"><a href="">Yusuf</a></td>
+
+
+                                                <td>2012/03/29</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Makassar Taman 2020</div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
