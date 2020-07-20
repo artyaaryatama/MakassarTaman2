@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Makassar Taman- Dashboard</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Makassar Taman</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Cari..." aria-label="Search"
+                    aria-describedby="basic-addon2" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Activity Log</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Home</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            Dashboard
+                        </a>
+                        <div class="sb-sidenav-menu-heading ">Produk</div>
+
+                        <a class="nav-link inline active" href="dashboard-products.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fab fa-product-hunt"></i>
+                            </div>
+                            Kelolah produk
+                        </a>
+
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+
+                            </nav>
+
+                        </div>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                            data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" href="#" data-toggle="collapse"
+                                    data-target="#pagesCollapseAuth" aria-expanded="false"
+                                    aria-controls="pagesCollapseAuth">
+                                    Authentication
+                                    <div class="sb-sidenav-collapse-arrow">
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
+                                    data-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="login.html">Login</a>
+                                        <a class="nav-link" href="register.html">Register</a>
+                                        <a class="nav-link" href="password.html">Forgot Password</a>
+                                    </nav>
+                                </div>
+                                <a class="nav-link collapsed" href="#" data-toggle="collapse"
+                                    data-target="#pagesCollapseError" aria-expanded="false"
+                                    aria-controls="pagesCollapseError">
+                                    Error
+                                    <div class="sb-sidenav-collapse-arrow">
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                </a>
+                             
+                            </nav>
+                        </div>
+                        <div class="sb-sidenav-menu-heading">Artikel</div>
+                        <a class="nav-link" href="dashboard-artikel.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="far fa-newspaper"></i>
+                            </div>
+                            Kelolah Artikel
+                        </a>
+
+
+                        <div class="sb-sidenav-menu-heading">Testimoni</div>
+                        <a class="nav-link" href="dashboard-artikel.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            Kelolah Testimoni
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Login sebagai:</div>
+                    Andi Gigatera
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid ">
+                    <h1 class="mt-4">Produk</h1>
+                    <ol class="breadcrumb mb-4 bg-dark ">
+                        <li class="breadcrumb-item "><a href="index.html" class="text-white">Dashboard</a></li>
+                        <li class="breadcrumb-item active text-white">Produk</li>
+                    </ol>
+
+
+                    <div class="container">
+                        <div class="dashboard-heading">
+                            <h2 class="dashboard-title">
+                                Produk Saya
+                            </h2>
+                            <p class="dashboard-subtitle">
+                                Kelolah stok produk anda disini
+                            </p>
+                        </div>
+                        <a class="btn btn-success btn-lg text-white"
+                            href="/dist/dashboard-products-create.html">Tambahkan produk baru</a>
+
+                        <div class="row mt-5 mb-4">
+
+                            <div class="produk-item scol-12 col-sm-6 col-md-4 col-lg-2">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="/assets/img/produk/produk-rumput-gajah-mini.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <div class="dashboard-heading">
+                                            <h5 class="card-title">
+                                                Rumput gajah mini
+                                            </h5>
+                                            <p class="dashboard-subtitle text-muted mb-1" style="margin-top: -15px;">
+                                                Rumput
+                                            </p>
+                                        </div>
+
+                                        <p class="card-text">Rumput Gajah Mini adalah salah satu jenis rumput yang
+                                            paling diminati oleh kebanyakan orang, karna perawatan yang mudah
+                                            dan harga yang lumayan ekonomis dengan spesifikasi yang murah..</p>
+                                        <div class="row">
+                                            <a class="col btn btn-danger " style="margin-right: 6px;" href="">Hapus
+                                                produk</a>
+                                            <a class="col btn btn-primary" href="">Lihat Produk</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="produk-item col-12 col-sm-6 col-md-4 col-lg-2 ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="/assets/img/produk/produk-rumput-swiss.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <div class="dashboard-heading">
+                                            <h5 class="card-title">
+                                                Rumput swiss
+                                            </h5>
+                                            <p class="dashboard-subtitle text-muted mb-1" style="margin-top: -15px;">
+                                                Rumput
+                                            </p>
+                                        </div>
+
+                                        <p class="card-text">Ukurannya yang besar dan tekstur yang kasar membuat rumput
+                                            ini kuat dan tahan lama. Perawatannya cukup mudah, yaitu
+                                            hanya perlu disiram sesekali dan harganya pun terjangkau.</p>
+                                        <div class="row">
+                                            <a class="col btn btn-danger " style="margin-right: 6px;" href="">Hapus
+                                                produk</a>
+                                            <a class="col btn btn-primary" href="">Lihat Produk</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="produk-item col-12 col-sm-6 col-md-4 col-lg-2">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="/assets/img/produk/produk-rumput-jepang.jpg" class="card-img-top"
+                                        alt="...">
+
+                                    <div class="card-body">
+                                        <div class="dashboard-heading">
+                                            <h5 class="card-title">
+                                                Rumput jepang
+                                            </h5>
+                                            <p class="dashboard-subtitle text-muted mb-1" style="margin-top: -15px;">
+                                                Rumput
+                                            </p>
+                                        </div>
+
+                                        <p class="card-text">Rumput Jepang tidak perlu terlalu sering dipangkas karena
+                                            pertumbuhannya agak lambat. Namun Anda perlu rutin menyiram
+                                            dan memberi pupuk agar rumput ini tidak menguning.</p>
+                                        <div class="row">
+                                            <a class="col btn btn-danger " style="margin-right: 6px;" href="">Hapus
+                                                produk</a>
+                                            <a class="col btn btn-primary" href="">Lihat Produk</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="produk-item col-12 col-sm-6 col-md-4 col-lg-2 mt-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="/assets/img/produk/produk-rumput-jepang.jpg" class="card-img-top"
+                                        alt="...">
+
+                                    <div class="card-body">
+                                        <div class="dashboard-heading">
+                                            <h5 class="card-title">
+                                                Rumput jepang
+                                            </h5>
+                                            <p class="dashboard-subtitle text-muted mb-1" style="margin-top: -15px;">
+                                                Rumput
+                                            </p>
+                                        </div>
+
+                                        <p class="card-text">Rumput Jepang tidak perlu terlalu sering dipangkas karena
+                                            pertumbuhannya agak lambat. Namun Anda perlu rutin menyiram
+                                            dan memberi pupuk agar rumput ini tidak menguning.</p>
+                                        <div class="row">
+                                            <a class="col btn btn-danger " style="margin-right: 6px;" href="">Hapus
+                                                produk</a>
+                                            <a class="col btn btn-primary" href="">Lihat Produk</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="produk-item col-12 col-sm-6 col-md-4 col-lg-2 mt-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="/assets/img/produk/produk-rumput-jepang.jpg" class="card-img-top"
+                                        alt="...">
+
+                                    <div class="card-body">
+                                        <div class="dashboard-heading">
+                                            <h5 class="card-title">
+                                                Rumput jepang
+                                            </h5>
+                                            <p class="dashboard-subtitle text-muted mb-1" style="margin-top: -15px;">
+                                                Rumput
+                                            </p>
+                                        </div>
+
+                                        <p class="card-text">Rumput Jepang tidak perlu terlalu sering dipangkas karena
+                                            pertumbuhannya agak lambat. Namun Anda perlu rutin menyiram
+                                            dan memberi pupuk agar rumput ini tidak menguning.</p>
+                                        <div class="row">
+                                            <a class="col btn btn-danger " style="margin-right: 6px;" href="">Hapus
+                                                produk</a>
+                                            <a class="col btn btn-primary" href="">Lihat Produk</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="produk-item col-12 col-sm-6 col-md-4 col-lg-2 mt-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="/assets/img/produk/produk-rumput-jepang.jpg" class="card-img-top"
+                                        alt="...">
+
+                                    <div class="card-body">
+                                        <div class="dashboard-heading">
+                                            <h5 class="card-title">
+                                                Rumput jepang
+                                            </h5>
+                                            <p class="dashboard-subtitle text-muted mb-1" style="margin-top: -15px;">
+                                                Rumput
+                                            </p>
+                                        </div>
+
+                                        <p class="card-text">Rumput Jepang tidak perlu terlalu sering dipangkas karena
+                                            pertumbuhannya agak lambat. Namun Anda perlu rutin menyiram
+                                            dan memberi pupuk agar rumput ini tidak menguning.</p>
+                                        <div class="row">
+                                            <a class="col btn btn-danger " style="margin-right: 6px;" href="">Hapus
+                                                produk</a>
+                                            <a class="col btn btn-primary" href="">Lihat Produk</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Makassar Taman 2020</div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
