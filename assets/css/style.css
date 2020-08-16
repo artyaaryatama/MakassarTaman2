@@ -1,3 +1,79 @@
+/*--------------------------------------------------------------
+# LOGIN admin PAGE
+--------------------------------------------------------------*/
+#login-admin {
+  height: auto;
+  background: #5cb874;
+}
+
+#login-admin .container {
+  padding-top: 15vh;
+}
+
+#login-admin .header-login img {
+  border:  8px double #5cb874;
+  background: #fff;
+  width: 14vh;
+}
+
+#login-admin .main-login {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 7vh 3vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 35%;
+}
+
+#login-admin .main-login h3 {
+  font-size: 20px;
+}
+
+#login-admin .main-login span {
+  color: #5cb874;
+  font-weight: 800;
+}
+#login-admin .main-login .btn {
+  width: 100%;
+  font-size: medium;
+}
+#login-admin .main-login .form-group {
+  width: 78%;
+  padding-top: 5px;
+  font-size: small;
+}
+#login-admin .main-login .form-control {
+  font-size: small;
+}
+#login-admin .main-login .form-check {
+  font-size: small;
+}
+@media (max-width: 991px){
+  #login-admin .main-login {
+    width: 48%;
+    padding: 6vh 3vh;
+  }
+  #login-admin .main-login h3 {
+    font-size: 18px;
+  }  
+}
+
+@media (max-width: 767px){
+  #login-admin .main-login {
+    width: 65vh;
+    padding: 5vh 3vh;
+  }
+  #login-admin .main-login h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 315px){
+  #login-admin .main-login {
+    width: 57vh;
+    padding: 3vh 3vh;
+  }
+  
+}
+
 /*dashboard-style*/
 
 /* */
